@@ -476,3 +476,8 @@ input[type='range']::-moz-range-thumb {
   background: transparent !important;
   color: transparent !important;
 }
+
+/* Over a card's quoted wording, the slide text reads as a link to that card. */
+.textLayer[data-over-quote] :is(span, br) {
+  cursor: pointer;
+}
